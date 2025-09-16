@@ -50,17 +50,19 @@ function render(){
       ` : ''}
       
       <a class="match-row" href="${link}" aria-label="Abrir detalhes do jogo">
-        <div class="team home-team">
-          <img alt="${m.homeTeam.name}" src="../../${m.homeTeam.crestUrl}" loading="lazy">
-          <span>${m.homeTeam.name}</span>
+        <div class="teams-container">
+          <div class="team home-team">
+            <img alt="${m.homeTeam.name}" src="../../${m.homeTeam.crestUrl}" loading="lazy">
+            <span>${m.homeTeam.name}</span>
+          </div>
+          <div class="team away-team">
+            <img alt="${m.awayTeam.name}" src="../../${m.awayTeam.crestUrl}" loading="lazy">
+            <span>${m.awayTeam.name}</span>
+          </div>
         </div>
         <div class="score-container">
           <div class="score">${m.score.home} - ${m.score.away}</div>
           ${m.status==='live' ? `<div class="live-indicator">●</div>` : ''}
-        </div>
-        <div class="team away-team">
-          <span>${m.awayTeam.name}</span>
-          <img alt="${m.awayTeam.name}" src="../../${m.awayTeam.crestUrl}" loading="lazy">
         </div>
       </a>
       

@@ -210,10 +210,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 20px;
   text-decoration: none;
   color: inherit;
-  padding: 12px 8px;
+  padding: 16px 12px;
   border-bottom: 2px dashed #e2e8f0;
   transition: all 0.3s ease;
 }
@@ -224,17 +224,25 @@ body {
   border-bottom-color: var(--cbf-blue);
 }
 
+.teams-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
 .team {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-weight: 600;
   color: #1e293b;
+  padding: 8px 0;
 }
 
 .team img {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
   transition: transform 0.3s ease;
@@ -244,15 +252,25 @@ body {
   transform: scale(1.1) rotate(5deg);
 }
 
+.home-team {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 12px;
+}
+
+.away-team {
+  padding-top: 4px;
+}
+
 .score {
   font-weight: 900;
-  font-size: 28px;
+  font-size: 32px;
   background: linear-gradient(135deg, var(--cbf-blue) 0%, var(--cbf-purple) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: 1px;
   text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .badge {
@@ -366,7 +384,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 4px;
+  min-width: 80px;
+  padding: 0 16px;
 }
 
 .live-indicator {
