@@ -33,22 +33,7 @@ function render(){
     const timeIcon = getTimeIcon(m.status);
     
     return `
-    <article class="match-card" data-status="${m.status}" data-league="${m.league}">
-      <div class="match-header">
-        <div class="match-league">
-          <span class="league-icon">${leagueIcon}</span>
-          ${m.league}${stage ? ` • ${stage}`: ''}
-        </div>
-        <span class="badge ${m.status}">${labelStatus(m)}</span>
-      </div>
-      
-      ${m.status==='live' ? `
-        <div class="live-bar">
-          <div class="live-bar-inner" style="width:${progress}%"></div>
-          <div class="live-progress-text">${m.minute}' - ${progress}%</div>
-        </div>
-      ` : ''}
-      
+    <article class="match-card" data-status="${m.status}">
       <a class="match-row" href="${link}" aria-label="Abrir detalhes do jogo">
         <div class="teams-container">
           <div class="team home-team">
@@ -65,53 +50,6 @@ function render(){
           ${m.status==='live' ? `<div class="live-indicator">●</div>` : ''}
         </div>
       </a>
-      
-      <div class="match-stats">
-        ${stats ? `
-          <div class="stat-item">
-            <span class="stat-label">Posse</span>
-            <div class="stat-bar">
-              <div class="stat-fill home" style="width: ${stats.possession.home}%"></div>
-              <div class="stat-fill away" style="width: ${stats.possession.away}%"></div>
-            </div>
-            <span class="stat-values">${stats.possession.home}% - ${stats.possession.away}%</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-label">Finalizações</span>
-            <span class="stat-values">${stats.shots.home} - ${stats.shots.away}</span>
-          </div>
-        ` : ''}
-      </div>
-      
-      <div class="meta">
-        <span class="meta-item">
-          <span class="meta-icon">${timeIcon}</span>
-          ${m.status==='scheduled' ? 'Início ' + formatTime(m.startTime) : m.status==='live' ? (m.minute + "'") : 'Final'}
-        </span>
-        <span class="meta-item">
-          <span class="meta-icon">${venueIcon}</span>
-          ${m.venue}
-        </span>
-        ${broadcasters ? `
-          <span class="meta-item">
-            <span class="meta-icon">📺</span>
-            ${broadcasters}
-          </span>
-        ` : ''}
-        ${m.referee ? `
-          <span class="meta-item">
-            <span class="meta-icon">👩‍⚖️</span>
-            ${m.referee}
-          </span>
-        ` : ''}
-      </div>
-      
-      ${lastEvent ? `<div class="last-event">${lastEvent}</div>`: ''}
-      
-      <div class="match-actions">
-        <a href="${link}" class="action-btn primary">Ver Detalhes</a>
-        ${m.status==='live' ? `<button class="action-btn secondary" onclick="toggleLiveUpdates('${m.id}')">Atualizações</button>` : ''}
-      </div>
     </article>`;
   }).join('');
   
