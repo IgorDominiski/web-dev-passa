@@ -72,6 +72,126 @@
         "corners": { "home": 7, "away": 1 },
         "fouls": { "home": 9, "away": 14 }
       }
+    },
+    {
+      "id": "br_fem_003",
+      "league": "Brasileirão Feminino",
+      "stage": "Quartas de Final",
+      "round": 1,
+      "status": "live",
+      "minute": 23,
+      "startTime": "2025-09-11T16:00:00Z",
+      "venue": "Arena da Amazônia",
+      "broadcasters": ["CBF TV", "Band"],
+      "referee": "Fernanda Colombo",
+      "homeTeam": { "name": "Flamengo", "crestUrl": "assets/imgs/palmeiras-164.png" },
+      "awayTeam": { "name": "Internacional", "crestUrl": "assets/imgs/brasileirao.png" },
+      "score": { "home": 0, "away": 1 },
+      "lastEvent": { "type": "goal", "team": "Internacional", "minute": 18, "player": "Diany" },
+      "timeline": [
+        { "minute": 18, "type": "goal", "team": "Internacional", "player": "Diany" }
+      ],
+      "stats": {
+        "possession": { "home": 45, "away": 55 },
+        "shots": { "home": 3, "away": 7 },
+        "shotsOnTarget": { "home": 1, "away": 3 },
+        "corners": { "home": 2, "away": 4 },
+        "fouls": { "home": 6, "away": 4 }
+      }
+    },
+    {
+      "id": "br_fem_004",
+      "league": "Brasileirão Feminino",
+      "stage": "Oitavas de Final",
+      "round": 2,
+      "status": "scheduled",
+      "minute": 0,
+      "startTime": "2025-09-12T15:30:00Z",
+      "venue": "Mineirão",
+      "broadcasters": ["CBF TV"],
+      "referee": null,
+      "homeTeam": { "name": "Atlético Mineiro", "crestUrl": "assets/imgs/palmeiras-164.png" },
+      "awayTeam": { "name": "Grêmio", "crestUrl": "assets/imgs/brasileirao.png" },
+      "score": { "home": 0, "away": 0 },
+      "lastEvent": null,
+      "timeline": [],
+      "stats": null
+    },
+    {
+      "id": "br_fem_005",
+      "league": "Brasileirão Feminino",
+      "stage": "Oitavas de Final",
+      "round": 1,
+      "status": "finished",
+      "minute": 90,
+      "startTime": "2025-09-10T20:00:00Z",
+      "venue": "Arena Fonte Nova",
+      "broadcasters": ["CBF TV", "SporTV"],
+      "referee": "Debora Correia",
+      "homeTeam": { "name": "Bahia", "crestUrl": "assets/imgs/palmeiras-164.png" },
+      "awayTeam": { "name": "Sport Recife", "crestUrl": "assets/imgs/brasileirao.png" },
+      "score": { "home": 3, "away": 1 },
+      "lastEvent": { "type": "end", "minute": 90 },
+      "timeline": [
+        { "minute": 12, "type": "goal", "team": "Bahia", "player": "Ingryd" },
+        { "minute": 34, "type": "goal", "team": "Sport Recife", "player": "Fe Palermo" },
+        { "minute": 67, "type": "goal", "team": "Bahia", "player": "Ingryd" },
+        { "minute": 89, "type": "goal", "team": "Bahia", "player": "Gi Campiolo" }
+      ],
+      "stats": {
+        "possession": { "home": 52, "away": 48 },
+        "shots": { "home": 12, "away": 8 },
+        "shotsOnTarget": { "home": 6, "away": 4 },
+        "corners": { "home": 6, "away": 3 },
+        "fouls": { "home": 11, "away": 13 }
+      }
+    },
+    {
+      "id": "intl_fem_002",
+      "league": "Copa América Feminina",
+      "stage": "Final",
+      "round": 1,
+      "status": "scheduled",
+      "minute": 0,
+      "startTime": "2025-09-15T21:00:00Z",
+      "venue": "Estádio Nacional",
+      "broadcasters": ["CBF TV", "SporTV", "Band"],
+      "referee": null,
+      "homeTeam": { "name": "Brasil", "crestUrl": "assets/imgs/selecao_bras_fem_fut_amist_colombia.png" },
+      "awayTeam": { "name": "Argentina", "crestUrl": "assets/imgs/image.png" },
+      "score": { "home": 0, "away": 0 },
+      "lastEvent": null,
+      "timeline": [],
+      "stats": null
+    },
+    {
+      "id": "br_fem_006",
+      "league": "Brasileirão Feminino",
+      "stage": "Quartas de Final",
+      "round": 2,
+      "status": "live",
+      "minute": 78,
+      "startTime": "2025-09-11T18:00:00Z",
+      "venue": "Arena Corinthians",
+      "broadcasters": ["CBF TV", "OpenTV"],
+      "referee": "Luciana Mafra",
+      "homeTeam": { "name": "São Paulo", "crestUrl": "assets/imgs/palmeiras-164.png" },
+      "awayTeam": { "name": "Santos", "crestUrl": "assets/imgs/brasileirao.png" },
+      "score": { "home": 2, "away": 2 },
+      "lastEvent": { "type": "goal", "team": "Santos", "minute": 75, "player": "Brena" },
+      "timeline": [
+        { "minute": 23, "type": "goal", "team": "São Paulo", "player": "Poliana" },
+        { "minute": 41, "type": "goal", "team": "Santos", "player": "Bruna Hirata" },
+        { "minute": 58, "type": "goal", "team": "São Paulo", "player": "Vitorinha" },
+        { "minute": 75, "type": "goal", "team": "Santos", "player": "Brena" }
+      ],
+      "stats": {
+        "possession": { "home": 48, "away": 52 },
+        "shots": { "home": 8, "away": 11 },
+        "shotsOnTarget": { "home": 4, "away": 5 },
+        "corners": { "home": 3, "away": 6 },
+        "fouls": { "home": 9, "away": 7 }
+      }
     }
   ]
 }
