@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Jogo</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/jogo.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+      <div class="logo">
+        <a href="../../home.html" class="logo-link">
+          <img src="../../assets/imgs/logo.png" alt="Passa a Bola">
+        </a>
+      </div>
+      <div class="nav-menu">
+        <a href="../../times.html" class="nav-link">Times</a>
+        <a href="./jogos.html" class="nav-link">Jogos</a>
+        <a href="./comunidade.html" class="nav-link">Comunidade</a>
+      </div>
+      <div class="header-actions"></div>
+    </nav>
+    <div class="sidebar-menu" id="sidebarMenu"></div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  </header>
+
+  <div class="fixed-logo" id="fixedLogo" aria-hidden="true">
+    <a href="../../home.html" class="fixed-logo-link">
+      <img src="../../assets/imgs/logo.png" alt="Passa a Bola">
+    </a>
+  </div>
+
+  <main class="match-page">
+    <section class="match-header-section">
+      <div class="container" id="matchHeader"></div>
+    </section>
+    <section class="match-body">
+      <div class="container match-grid">
+        <div class="timeline" id="timeline"></div>
+        <div class="stats" id="stats"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../script.js" defer></script>
+  <script src="../js/jogo.js" defer></script>
+</body>
+</html>
